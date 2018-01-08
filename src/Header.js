@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router-dom';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 
 class Header extends Component {
@@ -10,6 +12,12 @@ class Header extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title"></h1>
+          <Navbar>
+            <Nav>
+              <NavItem><Link to='/'>Home</Link></NavItem>
+              <NavItem><Link to='/about'>About</Link></NavItem>
+            </Nav>
+          </Navbar>
         </header>
       </div>
     );
