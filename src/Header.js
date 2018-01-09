@@ -16,6 +16,7 @@ class Header extends Component {
             <Nav>
               <NavItem><Link to='/'>Home</Link></NavItem>
               <NavItem><Link to='/about'>About</Link></NavItem>
+              <NavItem><Link to='/users'>Users</Link></NavItem>
             </Nav>
           </Navbar>
         </header>
