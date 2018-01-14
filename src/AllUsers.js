@@ -18,6 +18,7 @@ class AllUsers extends Component {
 								<Link to={`/users/${u.username}`}>
 									{u.username}
 								</Link>
+								<img src={require(`${u.prof_pic}`)} alt="User prof pic" />
 							</ListGroupItem>
 						))
 					}
