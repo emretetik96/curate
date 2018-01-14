@@ -1,0 +1,38 @@
+.img-container {
+	position: relative;
+	background-color: blue;
+	width: 100px;
+	height: auto;
+	margin: auto;
+}
+
+.image {
+	width: 100px;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	opacity: 1;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.img-container:hover .overlay {
+	opacity: 0.5;
+}

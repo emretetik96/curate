@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import UserAPI from './api'
-import { ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Image, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import "./AllUsers.css"
 
 class AllUsers extends Component {
 	render() {
@@ -15,10 +15,16 @@ class AllUsers extends Component {
 					{
 						UserAPI.users.map( (u) => (
 							<ListGroupItem>
-								<Link to={`/users/${u.username}`}>
-									{u.username}
-								</Link>
-								<img src={require(`${u.prof_pic}`)} alt="User prof pic" />
+								<div className="img-container">
+									<Image src={require(`${u.prof_pic}`)} alt="User prof pic" className="image" />
+									<Link to={`/users/${u.username}`}>
+										<div className="overlay">
+											<div className="overlay-text">
+												{u.username}
+											</div>
+										</div>
+									</Link>
+								</div>
 							</ListGroupItem>
 						))
 					}
