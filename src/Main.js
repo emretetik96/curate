@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Switch, Route} from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Users from './Users';
+import Home from './Home/Home';
+import About from './About/About';
+import Users from './Users/Users';
 
 class Main extends Component {
 	render() {

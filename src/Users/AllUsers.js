@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserAPI from './api'
+import UserAPI from '../api'
 import { Image, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import "./AllUsers.css"
@@ -20,7 +20,7 @@ class AllUsers extends Component {
 									<Link to={`/users/${u.username}`}>
 										<div className="overlay">
 											<div className="overlay-text">
-												{u.username}
+												{u.name}
 											</div>
 										</div>
 									</Link>
